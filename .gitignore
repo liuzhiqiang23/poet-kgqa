@@ -1,0 +1,24 @@
+# 数据大文件不入库
+data/raw/
+data/index/
+data/neo4j_import/
+data/models/
+data/processed/poems.jsonl
+data/processed/poet_entities.jsonl
+__pycache__/
+*.pyc
+venv/
+.idea/
+.pytest_cache/
+# 含个人密钥相关一律不入库
+*.key
+.env
+docs/paper_build/node_modules/
+docs/paper_build/package-lock.json
+
+# 论文正文与成品不入公开仓库（防查重命中；本地与交付夹保留）
+docs/paper_build/part1.md
+docs/paper_build/part2.md
+docs/paper_build/part3.md
+docs/paper_build/content.json
+docs/paper_build/*.docx

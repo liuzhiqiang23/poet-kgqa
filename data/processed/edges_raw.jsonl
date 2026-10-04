@@ -1,0 +1,438 @@
+{"poem_id": "t0_138", "title": "送賀知章歸四明", "src": "明皇帝", "dst": "贺知章", "rel": "赠别", "confidence": "high"}
+{"poem_id": "t10000_71", "title": "嶺下臥疾寄劉長卿員外", "src": "包佶", "dst": "刘长卿", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t10000_433", "title": "人日寄杜二拾遺", "src": "高适", "dst": "杜甫", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t10000_559", "title": "寄妻父劉長卿", "src": "李穆", "dst": "刘长卿", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t10000_568", "title": "送高三十五書記", "src": "杜甫", "dst": "高适", "rel": "赠别", "confidence": "high"}
+{"poem_id": "t10000_591", "title": "九日寄岑參", "src": "杜甫", "dst": "岑参", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t10000_592", "title": "送孔巢父謝病歸遊江東兼呈李白", "src": "杜甫", "dst": "李白", "rel": "干谒", "confidence": "high"}
+{"poem_id": "t10000_989", "title": "赠李白", "src": "杜甫", "dst": "李白", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t11000_2", "title": "送蔡希曾都尉還隴右因寄高三十五書記", "src": "杜甫", "dst": "高适", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t11000_5", "title": "寄高三十五書記", "src": "杜甫", "dst": "高适", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t11000_99", "title": "寄高三十五詹事", "src": "杜甫", "dst": "高适", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t11000_172", "title": "寄彭州高三十五使君適虢州岑二十七長史參三十韻", "src": "杜甫", "dst": "高适", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t11000_175", "title": "寄李十二白二十韻", "src": "杜甫", "dst": "李白", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t11000_175", "title": "寄李十二白二十韻", "src": "杜甫", "dst": "李白", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t11000_255", "title": "王十七侍御掄許攜酒至草堂奉寄此詩便請邀高三十五使君同到", "src": "杜甫", "dst": "高适", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t11000_412", "title": "奉寄高常侍", "src": "杜甫", "dst": "高适", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t11000_535", "title": "寄岑嘉州", "src": "杜甫", "dst": "岑参", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t11000_991", "title": "寄高適", "src": "杜甫", "dst": "高适", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t12000_63", "title": "洞庭送李十二赴零陵", "src": "賈至", "dst": "李白", "rel": "赠别", "confidence": "high"}
+{"poem_id": "t12000_79", "title": "賦得青城山歌送楊杜二郎中赴蜀軍", "src": "錢起", "dst": "杜甫", "rel": "赠别", "confidence": "high"}
+{"poem_id": "t12000_95", "title": "酬王維春夜竹亭贈別", "src": "錢起", "dst": "王维", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t12000_208", "title": "晚歸藍田酬王維給事贈別", "src": "錢起", "dst": "王维", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t12000_943", "title": "送陳兼應辟兼寄高適賈至", "src": "獨孤及", "dst": "高适", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t13000_192", "title": "使往壽州淮路寄劉長卿", "src": "皇甫冉", "dst": "刘长卿", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t13000_444", "title": "暮秋揚子江寄孟浩然", "src": "劉眘虛", "dst": "孟浩然", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t13000_444", "title": "暮秋揚子江寄孟浩然", "src": "劉眘虛", "dst": "孟浩然", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t13000_558", "title": "耶溪書懷寄劉長卿員外", "src": "秦系", "dst": "刘长卿", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t13000_576", "title": "寄李白", "src": "任華", "dst": "李白", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t13000_583", "title": "酬別杜二", "src": "嚴武", "dst": "杜甫", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t13000_659", "title": "答劉長卿七里瀨重送", "src": "嚴維", "dst": "刘长卿", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t14000_302", "title": "酬韓愈侍郎登岳陽樓見贈", "src": "竇庠", "dst": "韩愈", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t14000_337", "title": "送劉禹錫", "src": "竇鞏", "dst": "刘禹锡", "rel": "赠别", "confidence": "high"}
+{"poem_id": "t14000_338", "title": "送元稹西歸", "src": "竇鞏", "dst": "元稹", "rel": "赠别", "confidence": "high"}
+{"poem_id": "t14000_529", "title": "寄劉禹錫", "src": "戴叔倫", "dst": "刘禹锡", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t14000_530", "title": "寄孟郊", "src": "戴叔倫", "dst": "孟郊", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t14000_701", "title": "酬白樂天劉夢得", "src": "馮宿", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t14000_701", "title": "酬白樂天劉夢得", "src": "馮宿", "dst": "刘禹锡", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t15000_516", "title": "山居酬韋蘇州見寄", "src": "暢當", "dst": "韦应物", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t16000_148", "title": "寄賈島", "src": "王建", "dst": "贾岛", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t16000_152", "title": "寄上韓愈侍郎", "src": "王建", "dst": "韩愈", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t16000_279", "title": "哭孟東野二首 一", "src": "王建", "dst": "孟郊", "rel": "悼亡", "confidence": "medium"}
+{"poem_id": "t16000_280", "title": "哭孟東野二首 二", "src": "王建", "dst": "孟郊", "rel": "悼亡", "confidence": "medium"}
+{"poem_id": "t16000_603", "title": "奉酬韋蘇州使君", "src": "丘丹", "dst": "韦应物", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t17000_720", "title": "送章孝標校書歸杭州因寄白舍人", "src": "楊巨源", "dst": "白居易", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t17000_739", "title": "奉寄通州元九侍御", "src": "楊巨源", "dst": "元稹", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t17000_838", "title": "節度宣武酬樂天夢得", "src": "令狐楚", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t17000_838", "title": "節度宣武酬樂天夢得", "src": "令狐楚", "dst": "刘禹锡", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t17000_882", "title": "春思寄夢得樂天", "src": "令狐楚", "dst": "白居易", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t17000_882", "title": "春思寄夢得樂天", "src": "令狐楚", "dst": "刘禹锡", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t17000_935", "title": "江漢答孟郊", "src": "韩愈", "dst": "孟郊", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t18000_60", "title": "答孟郊", "src": "韩愈", "dst": "孟郊", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t18000_84", "title": "答柳柳州食蝦蟆", "src": "韩愈", "dst": "柳宗元", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t18000_272", "title": "同水部張員外籍曲江春遊寄白二十二舍人", "src": "韩愈", "dst": "白居易", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t18000_595", "title": "朗州竇常員外寄劉二十八詩見促行騎走筆酬贈", "src": "柳宗元", "dst": "刘禹锡", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t18000_598", "title": "善謔驛和劉夢得酹淳于先生", "src": "柳宗元", "dst": "刘禹锡", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_797", "title": "月夜憶樂天兼寄微之", "src": "刘禹锡", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t18000_802", "title": "和樂天洛城春齊梁體八韻", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_804", "title": "和樂天讌李周美中丞宅池上賞櫻桃花", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_806", "title": "和樂天秋涼閑臥", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_880", "title": "和樂天春詞依憶江南曲拍爲句 一", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_881", "title": "和樂天春詞依憶江南曲拍爲句 二", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_957", "title": "歲杪將發楚州呈樂天", "src": "刘禹锡", "dst": "白居易", "rel": "干谒", "confidence": "medium"}
+{"poem_id": "t18000_963", "title": "和樂天早寒", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_965", "title": "同樂天和微之深春二十首 一", "src": "刘禹锡", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_966", "title": "同樂天和微之深春二十首 二", "src": "刘禹锡", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_967", "title": "同樂天和微之深春二十首 三", "src": "刘禹锡", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_968", "title": "同樂天和微之深春二十首 四", "src": "刘禹锡", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_969", "title": "同樂天和微之深春二十首 五", "src": "刘禹锡", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_970", "title": "同樂天和微之深春二十首 六", "src": "刘禹锡", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_971", "title": "同樂天和微之深春二十首 七", "src": "刘禹锡", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_972", "title": "同樂天和微之深春二十首 八", "src": "刘禹锡", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_973", "title": "同樂天和微之深春二十首 九", "src": "刘禹锡", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_974", "title": "同樂天和微之深春二十首 十", "src": "刘禹锡", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_975", "title": "同樂天和微之深春二十首 十一", "src": "刘禹锡", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_976", "title": "同樂天和微之深春二十首 十二", "src": "刘禹锡", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_977", "title": "同樂天和微之深春二十首 十三", "src": "刘禹锡", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_978", "title": "同樂天和微之深春二十首 十四", "src": "刘禹锡", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_979", "title": "同樂天和微之深春二十首 十五", "src": "刘禹锡", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_980", "title": "同樂天和微之深春二十首 十六", "src": "刘禹锡", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_981", "title": "同樂天和微之深春二十首 十七", "src": "刘禹锡", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_982", "title": "同樂天和微之深春二十首 十八", "src": "刘禹锡", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_983", "title": "同樂天和微之深春二十首 十九", "src": "刘禹锡", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_984", "title": "同樂天和微之深春二十首 二十", "src": "刘禹锡", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_990", "title": "秋夕不寐寄樂天", "src": "刘禹锡", "dst": "白居易", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t18000_991", "title": "冬日晨興寄樂天", "src": "刘禹锡", "dst": "白居易", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t18000_992", "title": "答樂天見憶", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_993", "title": "和樂天誚失婢牓者", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t18000_994", "title": "八月十五日夜半雲開然後翫月因書一時之景寄呈樂天", "src": "刘禹锡", "dst": "白居易", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t19000_30", "title": "新秋對月寄樂天", "src": "刘禹锡", "dst": "白居易", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t19000_32", "title": "早秋雨後寄樂天", "src": "刘禹锡", "dst": "白居易", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t19000_34", "title": "和樂天燒藥不成命酒獨醉", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_131", "title": "春日書懷寄東洛白二十二楊八二庶子", "src": "刘禹锡", "dst": "白居易", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t19000_135", "title": "酬樂天揚州初逢席上見贈", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_138", "title": "和樂天鸚鵡", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_142", "title": "和樂天送鶴上裴相公別鶴之作", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_144", "title": "和樂天以鏡換酒", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_149", "title": "和樂天南園試小樂", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_150", "title": "答樂天戲贈", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_154", "title": "酬鄆州令狐相公官舍言懷見寄兼呈樂天", "src": "刘禹锡", "dst": "白居易", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t19000_156", "title": "答樂天所寄詠懷且釋其枯樹之歎", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_157", "title": "赴蘇州酬別樂天", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_158", "title": "福先寺雪中酬別樂天", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_159", "title": "和樂天耳順吟兼寄敦詩", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_161", "title": "酬樂天見寄", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_165", "title": "和樂天洛下醉吟寄太原令狐相公兼見懷長句", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_168", "title": "酬樂天貽賀金紫之什", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_170", "title": "和樂天柘枝", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_171", "title": "和樂天題真娘墓", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_186", "title": "酬樂天衫酒見寄", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_187", "title": "自左馮歸洛下酬樂天兼呈裴令公", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_188", "title": "秋齋獨坐寄樂天兼呈吳方之大夫", "src": "刘禹锡", "dst": "白居易", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t19000_189", "title": "和樂天齋戒月滿夜對道場偶懷詠", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_191", "title": "酬樂天齋滿日裴令公置宴席上戲贈", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_192", "title": "酬樂天偶題酒甕見寄", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_193", "title": "酬樂天請裴令公開春加宴", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_196", "title": "和樂天洛下雪中宴集寄汴州李尚書", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_202", "title": "酬元九侍御贈璧竹鞭長句", "src": "刘禹锡", "dst": "元稹", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t19000_205", "title": "酬竇員外郡齋宴客偶命柘枝因見寄兼呈張十一院長元九侍御", "src": "刘禹锡", "dst": "元稹", "rel": "干谒", "confidence": "high"}
+{"poem_id": "t19000_232", "title": "再授連州至衡陽酬柳柳州贈別", "src": "刘禹锡", "dst": "柳宗元", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t19000_275", "title": "酬樂天晚夏閑居欲相訪先詩見貽", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_276", "title": "酬樂天醉後狂吟十韻", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_459", "title": "杏園花下酬樂天見贈", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_460", "title": "和樂天春詞", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_464", "title": "醉答樂天", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_481", "title": "酬元九院長自江陵見寄", "src": "刘禹锡", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t19000_496", "title": "酬柳柳州家雞之贈", "src": "刘禹锡", "dst": "柳宗元", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t20000_65", "title": "答韓愈李觀別因獻張徐州", "src": "孟郊", "dst": "韩愈", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t20000_94", "title": "送韓愈從軍", "src": "孟郊", "dst": "韩愈", "rel": "赠别", "confidence": "high"}
+{"poem_id": "t20000_338", "title": "寄韓愈", "src": "張籍", "dst": "韩愈", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t20000_344", "title": "祭退之", "src": "張籍", "dst": "韩愈", "rel": "悼亡", "confidence": "medium"}
+{"poem_id": "t20000_421", "title": "酬白二十二舍人早春曲江見招", "src": "張籍", "dst": "白居易", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t20000_422", "title": "和裴僕射朝回寄韓吏部", "src": "張籍", "dst": "韩愈", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t20000_497", "title": "早朝寄白舍人嚴郎中", "src": "張籍", "dst": "白居易", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t20000_518", "title": "新除水曹郎答白舍人見賀", "src": "張籍", "dst": "白居易", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t20000_520", "title": "哭元九少府", "src": "張籍", "dst": "元稹", "rel": "悼亡", "confidence": "medium"}
+{"poem_id": "t20000_543", "title": "寄蘇州白二十二使君", "src": "張籍", "dst": "白居易", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t20000_565", "title": "寄白二十二舍人", "src": "張籍", "dst": "白居易", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t20000_791", "title": "苦雪寄退之", "src": "盧仝", "dst": "韩愈", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t21000_93", "title": "和樂天贈樊著作", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_94", "title": "和樂天感鶴", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_99", "title": "和樂天折劒頭", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_175", "title": "酬樂天", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_186", "title": "三月二十四日宿曾峰館夜對桐花寄樂天", "src": "元稹", "dst": "白居易", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t21000_187", "title": "酬樂天書懷見寄", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_188", "title": "酬樂天登樂遊園見憶", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_189", "title": "酬樂天早夏見懷", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_190", "title": "酬樂天勸醉", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_191", "title": "和樂天初授戶曹喜而言志", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_192", "title": "和樂天贈吳丹", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_193", "title": "和樂天秋題曲江", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_194", "title": "和樂天別弟後月夜作", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_195", "title": "和樂天秋題牡丹叢", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_256", "title": "酬樂天赴江州路上見寄三首 一", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_257", "title": "酬樂天赴江州路上見寄三首 二", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_258", "title": "酬樂天赴江州路上見寄三首 三", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_286", "title": "和樂天劉家花", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_289", "title": "和樂天夢亡友劉太白同遊二首 一", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_290", "title": "和樂天夢亡友劉太白同遊二首 二", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_291", "title": "酬樂天見憶兼傷仲遠", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_360", "title": "酬樂天東南行詩一百韻", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_361", "title": "和樂天送客遊嶺南二十韻", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_363", "title": "酬樂天江樓夜吟稹詩因成三十韻", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_364", "title": "酬樂天待漏入閤見贈", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_421", "title": "水上寄樂天", "src": "元稹", "dst": "白居易", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t21000_477", "title": "酬樂天寄蘄州簟", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_480", "title": "代杭民答樂天", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_517", "title": "酬樂天秋興見贈本句云莫怪獨吟秋興苦比君校近二毛年", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_553", "title": "貶江陵途中寄樂天杓直杓直以員外郎判鹽鐵樂天以拾遺在翰林", "src": "元稹", "dst": "白居易", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t21000_557", "title": "酬樂天八月十五夜禁中獨直玩月見寄", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_584", "title": "和樂天招錢蔚章看山絕句", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_628", "title": "留呈夢得子厚致用", "src": "元稹", "dst": "柳宗元", "rel": "干谒", "confidence": "medium"}
+{"poem_id": "t21000_628", "title": "留呈夢得子厚致用", "src": "元稹", "dst": "刘禹锡", "rel": "干谒", "confidence": "medium"}
+{"poem_id": "t21000_630", "title": "和樂天高相宅", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_631", "title": "和樂天仇家酒", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_632", "title": "和樂天贈雲寂僧", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_650", "title": "憑李忠州寄書樂天", "src": "元稹", "dst": "白居易", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t21000_652", "title": "寄樂天", "src": "元稹", "dst": "白居易", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t21000_655", "title": "酬樂天書後三韻", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_667", "title": "酬樂天醉別", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_668", "title": "酬樂天雨後見憶", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_669", "title": "和樂天過祕閣書省舊廳", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_670", "title": "和樂天贈楊祕書", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_671", "title": "和樂天題王家亭子", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_672", "title": "酬樂天頻夢微之", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_675", "title": "酬樂天春寄微之", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_676", "title": "酬樂天舟泊夜讀微之詩", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_677", "title": "酬樂天武關南見微之題山石榴花詩", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_678", "title": "酬樂天見寄", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_679", "title": "酬樂天得稹所寄紵絲布白輕庸製成衣服以詩報之", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_681", "title": "酬樂天寄生衣", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_682", "title": "酬樂天得微之詩知通州事因成四首 一", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_683", "title": "酬樂天得微之詩知通州事因成四首 二", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_684", "title": "酬樂天得微之詩知通州事因成四首 三", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_685", "title": "酬樂天得微之詩知通州事因成四首 四", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_686", "title": "酬樂天聞李尚書拜相以詩見賀", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_687", "title": "酬樂天歎窮愁見寄", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_688", "title": "酬樂天三月三日見寄", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_689", "title": "酬樂天歎損傷見寄", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_704", "title": "寄樂天二首 一", "src": "元稹", "dst": "白居易", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t21000_705", "title": "寄樂天二首 二", "src": "元稹", "dst": "白居易", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t21000_708", "title": "酬樂天喜鄰郡", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_715", "title": "酬樂天吟張員外詩見寄因思上京每與樂天於居敬兄升平里詠張新詩", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_716", "title": "寄樂天", "src": "元稹", "dst": "白居易", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t21000_718", "title": "重酬樂天", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_721", "title": "酬樂天餘思不盡加爲六韻之作", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_722", "title": "寄樂天", "src": "元稹", "dst": "白居易", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t21000_723", "title": "酬樂天雪中見寄", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_724", "title": "和樂天早春見寄", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_727", "title": "酬樂天重寄別", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_728", "title": "和樂天重題別東樓", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_841", "title": "和樂天示楊瓊", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_886", "title": "除夜酬樂天", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_887", "title": "酬樂天初冬早寒見寄", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_888", "title": "酬白樂天杏花園", "src": "元稹", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t21000_934", "title": "酬元九對新栽竹有懷見寄", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t22000_311", "title": "寄元九", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t22000_312", "title": "暮春寄元九", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t22000_320", "title": "勸酒寄元九", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t22000_326", "title": "和元九悼往", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t22000_353", "title": "寄元九", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t22000_369", "title": "寄元九", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t22000_398", "title": "寄微之三首 一", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t22000_399", "title": "寄微之三首 二", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t22000_400", "title": "寄微之三首 三", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t22000_407", "title": "春晚寄微之", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t22000_497", "title": "山石榴寄元九", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t22000_511", "title": "代書詩一百韻寄微之", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t22000_660", "title": "酬和元九東川路詩十二首 駱口驛舊題詩", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t22000_661", "title": "酬和元九東川路詩十二首 南秦雪", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t22000_662", "title": "酬和元九東川路詩十二首 山枇杷花二首 一", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t22000_663", "title": "酬和元九東川路詩十二首 山枇杷花二首 二", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t22000_664", "title": "酬和元九東川路詩十二首 江樓月", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t22000_665", "title": "酬和元九東川路詩十二首 亞枝花", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t22000_666", "title": "酬和元九東川路詩十二首 江上笛", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t22000_667", "title": "酬和元九東川路詩十二首 嘉陵夜有懷二首 一", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t22000_668", "title": "酬和元九東川路詩十二首 嘉陵夜有懷二首 二", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t22000_669", "title": "酬和元九東川路詩十二首 夜深行", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t22000_670", "title": "酬和元九東川路詩十二首 望驛臺", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t22000_671", "title": "酬和元九東川路詩十二首 江岸棃花", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t22000_675", "title": "和元九與呂二同宿話舊感贈", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t22000_739", "title": "醉後却寄元九", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t22000_750", "title": "寄生衣與微之因題封上", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t22000_767", "title": "韓公堆寄元九", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t22000_840", "title": "寄蘄州簟與元九因題六韻", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t22000_952", "title": "聞李尚書拜相因以長句寄賀微之", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t22000_963", "title": "寄微之", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t23000_29", "title": "即事寄微之", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t23000_43", "title": "寄微之", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t23000_326", "title": "和微之聽妻彈別鶴操因爲解釋其義依韻加四句", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_329", "title": "和微之四月一日作", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_353", "title": "耳順吟寄敦詩夢得", "src": "白居易", "dst": "刘禹锡", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t23000_361", "title": "和微之詩二十三首 和晨霞", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_362", "title": "和微之詩二十三首 和送劉道士遊天台", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_363", "title": "和微之詩二十三首 和櫛沐寄道友", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_364", "title": "和微之詩二十三首 和祝蒼華", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_365", "title": "和微之詩二十三首 和我年三首 一", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_366", "title": "和微之詩二十三首 和我年三首 二", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_367", "title": "和微之詩二十三首 和我年三首 三", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_368", "title": "和微之詩二十三首 和三月三十日四十韻", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_369", "title": "和微之詩二十三首 和寄樂天", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_370", "title": "和微之詩二十三首 和寄問劉白", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_372", "title": "和微之詩二十三首 和除夜作", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_373", "title": "和微之詩二十三首 和知非", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_374", "title": "和微之詩二十三首 和望曉", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_375", "title": "和微之詩二十三首 和李勢女", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_376", "title": "和微之詩二十三首 和酬鄭侍御東陽春悶放懷追越遊見寄", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_377", "title": "和微之詩二十三首 和自勸二首 一", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_378", "title": "和微之詩二十三首 和自勸二首 二", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_379", "title": "和微之詩二十三首 和雨中花", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_380", "title": "和微之詩二十三首 和晨興因報問龜兒", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_381", "title": "和微之詩二十三首 和朝回與王鍊師遊南山下", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_382", "title": "和微之詩二十三首 和嘗新酒", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_383", "title": "和微之詩二十三首 和順之琴者", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_427", "title": "張十八員外以新詩二十五首見寄郡樓月下吟翫通夕因題卷後封寄微之", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t23000_428", "title": "酬微之", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_429", "title": "餘思未盡加爲六韻重寄微之", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t23000_431", "title": "酬微之誇鏡湖", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_433", "title": "醉封詩筒寄微之", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t23000_434", "title": "除夜寄微之", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t23000_445", "title": "得湖州崔十八使君書喜與杭越鄰郡因成長句代賀兼寄微之", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t23000_466", "title": "重寄別微之", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t23000_517", "title": "晚春寄微之幷崔湖州", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t23000_530", "title": "吟前篇因寄微之", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t23000_537", "title": "秋寄微之十二韻", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t23000_553", "title": "泛太湖書事寄微之", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t23000_560", "title": "歲暮寄微之三首 一", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t23000_561", "title": "歲暮寄微之三首 二", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t23000_562", "title": "歲暮寄微之三首 三", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t23000_567", "title": "郡中閑獨寄微之及崔湖州", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t23000_571", "title": "酬微之開拆新樓初畢相報末聯見戲之作", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_583", "title": "仲夏齋居偶題八韻寄微之及崔湖州", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t23000_594", "title": "九日寄微之", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t23000_615", "title": "寫新詩寄微之偶題卷後", "src": "白居易", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t23000_665", "title": "雪中寄令狐相公兼呈夢得", "src": "白居易", "dst": "刘禹锡", "rel": "干谒", "confidence": "medium"}
+{"poem_id": "t23000_678", "title": "臨都驛答夢得六言二首 一", "src": "白居易", "dst": "刘禹锡", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_679", "title": "臨都驛答夢得六言二首 二", "src": "白居易", "dst": "刘禹锡", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_758", "title": "和微之春日投簡陽明洞天五十韻", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_810", "title": "酬夢得秋夕不寐見寄", "src": "白居易", "dst": "刘禹锡", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_883", "title": "哭微之二首 一", "src": "白居易", "dst": "元稹", "rel": "悼亡", "confidence": "medium"}
+{"poem_id": "t23000_884", "title": "哭微之二首 二", "src": "白居易", "dst": "元稹", "rel": "悼亡", "confidence": "medium"}
+{"poem_id": "t23000_917", "title": "酬別微之", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_942", "title": "戲和微之荅竇七行軍之作", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_955", "title": "和微之任校書郎日過三鄉", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_956", "title": "和微之十七與君別及隴月花枝之詠", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_957", "title": "和微之歎槿花", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_960", "title": "和微之道保生三日", "src": "白居易", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t23000_980", "title": "府齋感懷酬夢得", "src": "白居易", "dst": "刘禹锡", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t24000_5", "title": "和夢得冬日晨興", "src": "白居易", "dst": "刘禹锡", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t24000_53", "title": "嬾放二首呈劉夢得吳方之 一", "src": "白居易", "dst": "刘禹锡", "rel": "干谒", "confidence": "medium"}
+{"poem_id": "t24000_54", "title": "嬾放二首呈劉夢得吳方之 二", "src": "白居易", "dst": "刘禹锡", "rel": "干谒", "confidence": "medium"}
+{"poem_id": "t24000_100", "title": "酬牛相公宮城早秋寓言見示兼呈夢得", "src": "白居易", "dst": "刘禹锡", "rel": "干谒", "confidence": "medium"}
+{"poem_id": "t24000_127", "title": "和夢得", "src": "白居易", "dst": "刘禹锡", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t24000_153", "title": "初冬早起寄夢得", "src": "白居易", "dst": "刘禹锡", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t24000_162", "title": "早春憶蘇州寄夢得", "src": "白居易", "dst": "刘禹锡", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t24000_331", "title": "和令公問劉賓客歸來稱意無之作", "src": "白居易", "dst": "刘禹锡", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t24000_332", "title": "酬夢得窮秋夜坐即事見寄", "src": "白居易", "dst": "刘禹锡", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t24000_337", "title": "吳祕監每有美酒獨酌獨醉但蒙詩報不以飲招輙此戲酬兼呈夢得", "src": "白居易", "dst": "刘禹锡", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t24000_338", "title": "酬夢得霜夜對月見懷", "src": "白居易", "dst": "刘禹锡", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t24000_342", "title": "題酒甕呈夢得", "src": "白居易", "dst": "刘禹锡", "rel": "干谒", "confidence": "medium"}
+{"poem_id": "t24000_399", "title": "奉和思黯自題南莊見示兼呈夢得", "src": "白居易", "dst": "刘禹锡", "rel": "干谒", "confidence": "medium"}
+{"poem_id": "t24000_404", "title": "酬夢得以予五月長齋延僧徒絕賓友見戲十韻", "src": "白居易", "dst": "刘禹锡", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t24000_409", "title": "奉和思黯相公以李蘇州所寄太湖石奇狀絕倫因題二十韻見示兼呈夢得", "src": "白居易", "dst": "刘禹锡", "rel": "干谒", "confidence": "medium"}
+{"poem_id": "t24000_416", "title": "酬夢得早秋夜對月見寄", "src": "白居易", "dst": "刘禹锡", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t24000_433", "title": "酬夢得暮秋晴夜對月相憶", "src": "白居易", "dst": "刘禹锡", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t24000_437", "title": "初冬即事呈夢得", "src": "白居易", "dst": "刘禹锡", "rel": "干谒", "confidence": "medium"}
+{"poem_id": "t24000_446", "title": "酬夢得比萱草見贈", "src": "白居易", "dst": "刘禹锡", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t24000_472", "title": "酬夢得貧居詠懷見贈", "src": "白居易", "dst": "刘禹锡", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t24000_473", "title": "酬夢得見喜疾瘳", "src": "白居易", "dst": "刘禹锡", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t24000_497", "title": "談氏外孫生三日喜是男偶吟成篇兼戲呈夢得", "src": "白居易", "dst": "刘禹锡", "rel": "干谒", "confidence": "medium"}
+{"poem_id": "t24000_543", "title": "偶吟自慰兼呈夢得", "src": "白居易", "dst": "刘禹锡", "rel": "干谒", "confidence": "medium"}
+{"poem_id": "t24000_566", "title": "和夢得洛中早春見贈七韻", "src": "白居易", "dst": "刘禹锡", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t24000_648", "title": "哭劉尚書夢得二首 一", "src": "白居易", "dst": "刘禹锡", "rel": "悼亡", "confidence": "medium"}
+{"poem_id": "t24000_649", "title": "哭劉尚書夢得二首 二", "src": "白居易", "dst": "刘禹锡", "rel": "悼亡", "confidence": "medium"}
+{"poem_id": "t24000_738", "title": "小庭寒夜寄夢得", "src": "白居易", "dst": "刘禹锡", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t24000_757", "title": "和夢得夏至憶蘇州呈盧賓客", "src": "白居易", "dst": "刘禹锡", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t24000_795", "title": "和劉夢得歲夜懷友", "src": "盧貞", "dst": "刘禹锡", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t24000_880", "title": "李蘇州遺太湖石奇狀絕倫因題二十韻奉呈夢得樂天", "src": "牛僧孺", "dst": "白居易", "rel": "干谒", "confidence": "medium"}
+{"poem_id": "t24000_880", "title": "李蘇州遺太湖石奇狀絕倫因題二十韻奉呈夢得樂天", "src": "牛僧孺", "dst": "刘禹锡", "rel": "干谒", "confidence": "medium"}
+{"poem_id": "t24000_917", "title": "和白樂天", "src": "崔玄亮", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t24000_936", "title": "在巴南望郡南山呈樂天", "src": "白行簡", "dst": "白居易", "rel": "干谒", "confidence": "medium"}
+{"poem_id": "t25000_440", "title": "洛中士君子多以平泉見呼愧獲方外之名因以此詩爲報奉寄劉賓客", "src": "李德裕", "dst": "刘禹锡", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t25000_858", "title": "奉酬樂天立秋夕有懷見寄", "src": "李紳", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t26000_230", "title": "送白舍人渡江", "src": "殷堯藩", "dst": "白居易", "rel": "赠别", "confidence": "high"}
+{"poem_id": "t26000_231", "title": "送劉禹錫侍御出刺連州", "src": "殷堯藩", "dst": "刘禹锡", "rel": "赠别", "confidence": "high"}
+{"poem_id": "t26000_286", "title": "春詞酬元微之", "src": "沈亞之", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t26000_518", "title": "送劉禹錫郎中赴蘇州 一", "src": "姚合", "dst": "刘禹锡", "rel": "赠别", "confidence": "high"}
+{"poem_id": "t26000_519", "title": "送劉禹錫郎中赴蘇州 二", "src": "姚合", "dst": "刘禹锡", "rel": "赠别", "confidence": "high"}
+{"poem_id": "t26000_595", "title": "送賈島及鍾渾", "src": "姚合", "dst": "贾岛", "rel": "赠别", "confidence": "high"}
+{"poem_id": "t26000_609", "title": "寄賈島", "src": "姚合", "dst": "贾岛", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t26000_640", "title": "寄賈島時任普州司倉", "src": "姚合", "dst": "贾岛", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t26000_643", "title": "寄賈島", "src": "姚合", "dst": "贾岛", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t26000_646", "title": "洛下夜會寄賈島", "src": "姚合", "dst": "贾岛", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t26000_667", "title": "寄賈島浪仙", "src": "姚合", "dst": "贾岛", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t26000_667", "title": "寄賈島浪仙", "src": "姚合", "dst": "贾岛", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t26000_684", "title": "寄賈島", "src": "姚合", "dst": "贾岛", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t26000_926", "title": "和李十二舍人冬至日", "src": "姚合", "dst": "李白", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t26000_932", "title": "和李十二舍人裴四二舍人兩閣老酬白少傅見寄", "src": "姚合", "dst": "李白", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t26000_933", "title": "和劉禹錫主客冬初拜表懷上都故人", "src": "姚合", "dst": "刘禹锡", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t26000_944", "title": "和李十二舍人直日放朝對雪", "src": "姚合", "dst": "李白", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t26000_994", "title": "聞蟬寄賈島", "src": "姚合", "dst": "贾岛", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t27000_22", "title": "哭賈島二首 一", "src": "姚合", "dst": "贾岛", "rel": "悼亡", "confidence": "high"}
+{"poem_id": "t27000_23", "title": "哭賈島二首 二", "src": "姚合", "dst": "贾岛", "rel": "悼亡", "confidence": "high"}
+{"poem_id": "t27000_56", "title": "出關寄賈島", "src": "周賀", "dst": "贾岛", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t27000_90", "title": "出關後寄賈島", "src": "周賀", "dst": "贾岛", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t27000_603", "title": "和杜牧之齊山登高", "src": "張祜", "dst": "杜牧", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t27000_603", "title": "和杜牧之齊山登高", "src": "張祜", "dst": "杜牧", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t27000_912", "title": "鄂渚送白舍人赴杭州", "src": "朱慶餘", "dst": "白居易", "rel": "赠别", "confidence": "high"}
+{"poem_id": "t29000_116", "title": "酬邢杜二員外", "src": "許渾", "dst": "杜甫", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t29000_329", "title": "聞著明凶問哭寄飛卿", "src": "李商隐", "dst": "温庭筠", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t29000_896", "title": "送溫庭筠尉方城", "src": "紀唐夫", "dst": "温庭筠", "rel": "赠别", "confidence": "high"}
+{"poem_id": "t29000_938", "title": "送賈島往金州謁姚員外", "src": "喻鳧", "dst": "贾岛", "rel": "赠别", "confidence": "high"}
+{"poem_id": "t30000_633", "title": "送賀知章入道", "src": "姚鵠", "dst": "贺知章", "rel": "赠别", "confidence": "high"}
+{"poem_id": "t30000_754", "title": "長安寓居寄贈賈島", "src": "馬戴", "dst": "贾岛", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t30000_792", "title": "寄賈島", "src": "馬戴", "dst": "贾岛", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t30000_803", "title": "懷故山寄賈島", "src": "馬戴", "dst": "贾岛", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t31000_733", "title": "投孟郊", "src": "贾岛", "dst": "孟郊", "rel": "干谒", "confidence": "high"}
+{"poem_id": "t31000_766", "title": "哭孟郊", "src": "贾岛", "dst": "孟郊", "rel": "悼亡", "confidence": "high"}
+{"poem_id": "t32000_27", "title": "和韓吏部泛南溪", "src": "贾岛", "dst": "韩愈", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t32000_70", "title": "哭孟東野", "src": "贾岛", "dst": "孟郊", "rel": "悼亡", "confidence": "medium"}
+{"poem_id": "t32000_379", "title": "秋日旅舍寄義山李侍御", "src": "温庭筠", "dst": "李商隐", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t32000_442", "title": "寄溫飛卿牋紙", "src": "段成式", "dst": "温庭筠", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t32000_463", "title": "柔卿解籍戲呈飛卿三首 一", "src": "段成式", "dst": "温庭筠", "rel": "干谒", "confidence": "medium"}
+{"poem_id": "t32000_464", "title": "柔卿解籍戲呈飛卿三首 二", "src": "段成式", "dst": "温庭筠", "rel": "干谒", "confidence": "medium"}
+{"poem_id": "t32000_465", "title": "柔卿解籍戲呈飛卿三首 三", "src": "段成式", "dst": "温庭筠", "rel": "干谒", "confidence": "medium"}
+{"poem_id": "t32000_821", "title": "哭賈島", "src": "李頻", "dst": "贾岛", "rel": "悼亡", "confidence": "high"}
+{"poem_id": "t32000_935", "title": "哭李商隱 一", "src": "崔珏", "dst": "李商隐", "rel": "悼亡", "confidence": "high"}
+{"poem_id": "t32000_936", "title": "哭李商隱 二", "src": "崔珏", "dst": "李商隐", "rel": "悼亡", "confidence": "high"}
+{"poem_id": "t39000_819", "title": "寄賀杜荀鶴及第", "src": "殷文圭", "dst": "杜荀鹤", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t39000_886", "title": "追和白舍人詠白牡丹", "src": "徐夤", "dst": "白居易", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t40000_84", "title": "追和賈浪仙古鏡", "src": "徐夤", "dst": "贾岛", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t40000_583", "title": "賦得送賈島謫長江", "src": "李洞", "dst": "贾岛", "rel": "赠别", "confidence": "high"}
+{"poem_id": "t43000_540", "title": "宴興化池亭送白二十二東歸聯句", "src": "裴度", "dst": "白居易", "rel": "赠别", "confidence": "high"}
+{"poem_id": "t43000_541", "title": "西池送白二十二東歸兼寄令狐相公聯句", "src": "裴度", "dst": "白居易", "rel": "赠别", "confidence": "high"}
+{"poem_id": "t44000_163", "title": "和劉賓客玉蕣", "src": "薛濤", "dst": "刘禹锡", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t44000_208", "title": "寄舊詩與元微之", "src": "薛濤", "dst": "元稹", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t44000_223", "title": "冬夜寄溫飛卿", "src": "魚玄機", "dst": "温庭筠", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t44000_243", "title": "寄飛卿", "src": "魚玄機", "dst": "温庭筠", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t44000_828", "title": "秋寄從兄賈島", "src": "無可", "dst": "贾岛", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t44000_887", "title": "送李長吉之任東井", "src": "無可", "dst": "李贺", "rel": "赠别", "confidence": "medium"}
+{"poem_id": "t45000_492", "title": "哭賈島", "src": "可止", "dst": "贾岛", "rel": "悼亡", "confidence": "high"}
+{"poem_id": "t45000_502", "title": "悼羅隱", "src": "歸仁", "dst": "罗隐", "rel": "悼亡", "confidence": "high"}
+{"poem_id": "t49000_954", "title": "奉和白舍人遊鏡湖夜歸", "src": "周元範", "dst": "白居易", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t5000_479", "title": "敬酬張九齡當塗界留贈之作", "src": "裴耀卿", "dst": "张九龄", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t5000_480", "title": "酬張九齡使風見示", "src": "裴耀卿", "dst": "张九龄", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t5000_563", "title": "奉和賀監林月清酌", "src": "王灣", "dst": "贺知章", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t5000_586", "title": "送孟八浩然歸襄陽二首 一", "src": "張子容", "dst": "孟浩然", "rel": "赠别", "confidence": "medium"}
+{"poem_id": "t5000_587", "title": "送孟八浩然歸襄陽二首 二", "src": "張子容", "dst": "孟浩然", "rel": "赠别", "confidence": "medium"}
+{"poem_id": "t5000_740", "title": "送賀監歸四明應制", "src": "李林甫", "dst": "贺知章", "rel": "赠别", "confidence": "medium"}
+{"poem_id": "t5000_860", "title": "送高適弟耽歸臨淮作", "src": "王维", "dst": "高适", "rel": "赠别", "confidence": "high"}
+{"poem_id": "t50000_634", "title": "遥知（友人陳九思同志疑「知」乃「和」字之訛）元九送王行周遊越", "src": "李紳", "dst": "元稹", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t50000_635", "title": "哭微之", "src": "白居易", "dst": "元稹", "rel": "悼亡", "confidence": "medium"}
+{"poem_id": "t51000_463", "title": "送李商隱侍御奉使入關", "src": "李郢", "dst": "李商隐", "rel": "赠别", "confidence": "high"}
+{"poem_id": "t51000_807", "title": "和杜甫（句）", "src": "楊興義", "dst": "杜甫", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t53000_521", "title": "奉使往蜀路傍見山花吟寄樂天（題擬） 一", "src": "元稹", "dst": "白居易", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t53000_522", "title": "奉使往蜀路傍見山花吟寄樂天（題擬） 二", "src": "元稹", "dst": "白居易", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t53000_589", "title": "十二月四日寄樂天（題擬）", "src": "崔玄亮", "dst": "白居易", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t53000_709", "title": "祭韓吏部文附詩", "src": "刘禹锡", "dst": "韩愈", "rel": "悼亡", "confidence": "high"}
+{"poem_id": "t53000_713", "title": "酬樂天", "src": "刘禹锡", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t53000_740", "title": "玉泉寺次韻寄白樂天刺史", "src": "僧初", "dst": "白居易", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t53000_837", "title": "答樂天見寄履道新小灘詩（題擬）", "src": "牛僧孺", "dst": "白居易", "rel": "唱和", "confidence": "medium"}
+{"poem_id": "t6000_167", "title": "哭孟浩然", "src": "王维", "dst": "孟浩然", "rel": "悼亡", "confidence": "high"}
+{"poem_id": "t6000_167", "title": "哭孟浩然", "src": "王维", "dst": "孟浩然", "rel": "悼亡", "confidence": "medium"}
+{"poem_id": "t6000_241", "title": "和王維敕賜百官櫻桃", "src": "崔興宗", "dst": "王维", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t6000_243", "title": "酬王維盧象見過林亭", "src": "崔興宗", "dst": "王维", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t6000_245", "title": "酬王維", "src": "苑咸", "dst": "王维", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t6000_310", "title": "答王維留宿", "src": "祖詠", "dst": "王维", "rel": "唱和", "confidence": "high"}
+{"poem_id": "t6000_365", "title": "送王昌齡", "src": "李頎", "dst": "王昌龄", "rel": "赠别", "confidence": "high"}
+{"poem_id": "t6000_877", "title": "巴陵送李十二", "src": "王昌龄", "dst": "李白", "rel": "赠别", "confidence": "high"}
+{"poem_id": "t7000_682", "title": "送丁大鳳進士赴舉呈張九齡", "src": "孟浩然", "dst": "张九龄", "rel": "干谒", "confidence": "high"}
+{"poem_id": "t7000_883", "title": "送王昌齡之嶺南", "src": "孟浩然", "dst": "王昌龄", "rel": "赠别", "confidence": "high"}
+{"poem_id": "t8000_355", "title": "沙丘城下寄杜甫", "src": "李白", "dst": "杜甫", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t8000_375", "title": "春日歸山寄孟浩然", "src": "李白", "dst": "孟浩然", "rel": "赠答", "confidence": "high"}
+{"poem_id": "t8000_375", "title": "春日歸山寄孟浩然", "src": "李白", "dst": "孟浩然", "rel": "赠答", "confidence": "medium"}
+{"poem_id": "t8000_420", "title": "黃鶴樓送孟浩然之廣陵", "src": "李白", "dst": "孟浩然", "rel": "赠别", "confidence": "high"}
+{"poem_id": "t8000_420", "title": "黃鶴樓送孟浩然之廣陵", "src": "李白", "dst": "孟浩然", "rel": "赠别", "confidence": "medium"}
+{"poem_id": "t8000_454", "title": "魯郡東石門送杜二甫", "src": "李白", "dst": "杜甫", "rel": "赠别", "confidence": "high"}
+{"poem_id": "t8000_454", "title": "魯郡東石門送杜二甫", "src": "李白", "dst": "杜甫", "rel": "赠别", "confidence": "medium"}
+{"poem_id": "t8000_458", "title": "送賀監歸四明應制", "src": "李白", "dst": "贺知章", "rel": "赠别", "confidence": "medium"}

@@ -1,0 +1,97 @@
+{
+ "n": 15,
+ "vector_hit3": "12/15 (80%)",
+ "keyword_hit3": "2/15 (13%)",
+ "detail": [
+  {
+   "q": "疑是地上霜 月光 思乡",
+   "target": "靜夜思",
+   "vector_hit3": true,
+   "keyword_hit3": false
+  },
+  {
+   "q": "此物最相思 红豆 相思之情",
+   "target": "相思",
+   "vector_hit3": true,
+   "keyword_hit3": false
+  },
+  {
+   "q": "花落知多少 春 夜雨",
+   "target": "春曉",
+   "vector_hit3": true,
+   "keyword_hit3": false
+  },
+  {
+   "q": "海上生明月 思念远方",
+   "target": "望月懷遠",
+   "vector_hit3": true,
+   "keyword_hit3": false
+  },
+  {
+   "q": "岱宗夫如何 泰山 雄壮",
+   "target": "望嶽",
+   "vector_hit3": true,
+   "keyword_hit3": false
+  },
+  {
+   "q": "寸草心 母爱 报答",
+   "target": "雜曲歌辭 遊子吟",
+   "vector_hit3": false,
+   "keyword_hit3": false
+  },
+  {
+   "q": "入海流 黄河 更上层楼",
+   "target": "登樓",
+   "vector_hit3": true,
+   "keyword_hit3": true
+  },
+  {
+   "q": "葡萄美酒夜光杯 边塞 豪饮",
+   "target": "涼州詞二首 一",
+   "vector_hit3": true,
+   "keyword_hit3": false
+  },
+  {
+   "q": "粒粒皆辛苦 农夫 节俭",
+   "target": "古風二首 二",
+   "vector_hit3": true,
+   "keyword_hit3": false
+  },
+  {
+   "q": "寒山寺 夜半钟声 客船",
+   "target": "楓橋夜泊",
+   "vector_hit3": true,
+   "keyword_hit3": true
+  },
+  {
+   "q": "國破山河在 战乱 忧国",
+   "target": "春望",
+   "vector_hit3": false,
+   "keyword_hit3": false
+  },
+  {
+   "q": "巴山夜雨 秋池 思念",
+   "target": "夜雨寄北",
+   "vector_hit3": true,
+   "keyword_hit3": false
+  },
+  {
+   "q": "夜泊秦淮近酒家 商女 后庭花",
+   "target": "泊秦淮",
+   "vector_hit3": true,
+   "keyword_hit3": false
+  },
+  {
+   "q": "清泉石上流 空山 秋暝",
+   "target": "山居秋暝",
+   "vector_hit3": false,
+   "keyword_hit3": false
+  },
+  {
+   "q": "遍插茱萸少一人 重阳 思亲",
+   "target": "九月九日憶山東兄弟",
+   "vector_hit3": true,
+   "keyword_hit3": false
+  }
+ ]
+}
