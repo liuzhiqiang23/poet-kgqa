@@ -75,9 +75,10 @@ RATE_LIMIT = 12  # 每 IP 每分钟 POST 上限（DeepSeek 调用只发生在 PO
 @app.before_request
 def _guard_api():
     if request.method == "POST" and request.path.startswith("/api/"):
-        ip = request.headers.get("X-Real-IP") or request.remote_addr or "?"
+        # 反代场景取 X-Real-IP（nginx 注入）；直连场景 remote_addr 即本机
+        real_ip = request.headers.get("X-Real-IP") or request.remote_addr or "?"
         now = time.time()
-        dq = _rate[ip]
+        dq = _rate[real_ip]
         while dq and now - dq[0] > 60:
             dq.popleft()
         if len(dq) >= RATE_LIMIT:
@@ -87,7 +88,7 @@ def _guard_api():
         host = request.headers.get("Host", "")
         org = request.headers.get("Origin") or request.headers.get("Referer") or ""
         same_origin = bool(org) and org.split("//", 1)[-1].startswith(host)
-        if request.remote_addr not in ("127.0.0.1", "::1") and not same_origin:
+        if real_ip not in ("127.0.0.1", "::1") and not same_origin:
             return jsonify({"error": "forbidden"}), 403
     return None
 
