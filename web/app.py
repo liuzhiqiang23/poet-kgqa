@@ -7,6 +7,8 @@ web/app.py — 毕设系统 Web 服务（Flask）
 from __future__ import annotations
 
 import sys
+import time
+from collections import defaultdict, deque
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -63,6 +65,31 @@ def _hans_evidence(ev):
         else:
             out.append(e)
     return out
+
+
+# ---------- 公网防滥用：同源锁定 + 进程内限流 ----------
+_rate: dict = defaultdict(deque)
+RATE_LIMIT = 12  # 每 IP 每分钟 POST 上限（DeepSeek 调用只发生在 POST）
+
+
+@app.before_request
+def _guard_api():
+    if request.method == "POST" and request.path.startswith("/api/"):
+        ip = request.headers.get("X-Real-IP") or request.remote_addr or "?"
+        now = time.time()
+        dq = _rate[ip]
+        while dq and now - dq[0] > 60:
+            dq.popleft()
+        if len(dq) >= RATE_LIMIT:
+            return jsonify({"error": "请求太频繁，请稍后再试"}), 429
+        dq.append(now)
+        # 同源锁定：浏览器同源 fetch 必带 Origin/Referer；绕过页面直调接口的脚本两者皆无 → 拒
+        host = request.headers.get("Host", "")
+        org = request.headers.get("Origin") or request.headers.get("Referer") or ""
+        same_origin = bool(org) and org.split("//", 1)[-1].startswith(host)
+        if request.remote_addr not in ("127.0.0.1", "::1") and not same_origin:
+            return jsonify({"error": "forbidden"}), 403
+    return None
 
 
 @app.route("/")
