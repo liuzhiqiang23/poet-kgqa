@@ -5,9 +5,14 @@
 
 **Neo4j 图谱 + FAISS 向量双轨检索 + BERT NER 消歧 + DeepSeek 证据化生成**，全部组件可在普通笔记本 CPU 上运行，任一组件缺席自动降级、永不离线。
 
+> **🚀 在线试用**（作者电脑开机期间开放）：<https://sister-individual-jacksonville-patents.trycloudflare.com>
+> 链接随部署机重启而变化；若失效请按下方"快速开始"在本机一键部署，或看[展示页](https://liuzhiqiang23.github.io/poet-kgqa/)了解系统。
+
 | 智能问答（证据链） | 图谱探索（交游图） | 诗人对话（人格+时间锚） |
 |---|---|---|
 | ![](docs/paper_build/figs/shot5-1_qa.png) | ![](docs/paper_build/figs/shot5-2_graph.png) | ![](docs/paper_build/figs/shot5-3_dialog.png) |
+
+<sub>截图即真实界面；点上方"在线试用"可直接操作。</sub>
 
 ## 功能特性
 
