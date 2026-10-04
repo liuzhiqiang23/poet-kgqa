@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>历代诗人知识图谱问答系统 · Poet-KGQA</title>
+<style>
+  :root{ --paper:#f4eee0; --ink:#26221c; --sub:#6d6353; --seal:#9d3b28; --gold:#a98d52; --line:#ddd2ba;
+         --kai:"KaiTi","Kaiti SC","STKaiti",serif; --song:"SimSun","Noto Serif SC",serif; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{ background:var(--paper); color:var(--ink); font-family:var(--song); }
+  .hero{ text-align:center; padding:64px 20px 40px; }
+  .seal{ width:56px; height:56px; border-radius:10px; background:linear-gradient(145deg,#9d3b28,#7c2d1e);
+         color:#f7efdd; font-family:var(--kai); font-size:30px; display:inline-flex; align-items:center;
+         justify-content:center; box-shadow:2px 3px 0 rgba(124,45,30,.18); }
+  h1{ font-family:var(--kai); font-size:30px; letter-spacing:4px; margin-top:18px; }
+  .sub{ font-family:var(--kai); color:var(--sub); margin-top:10px; letter-spacing:2px; font-size:15px; }
+  .stats{ display:flex; gap:26px; justify-content:center; margin-top:22px; flex-wrap:wrap; }
+  .stat{ font-family:var(--kai); }
+  .stat b{ font-size:24px; color:var(--seal); }
+  .stat span{ display:block; font-size:12.5px; color:var(--sub); margin-top:2px; letter-spacing:1px; }
+  main{ max-width:1080px; margin:0 auto; padding:10px 24px 60px; }
+  .card{ background:#fcf8ee; border:1px solid var(--line); border-left:3px solid var(--seal);
+         border-radius:4px 14px 14px 4px; padding:20px 24px; margin:22px 0; box-shadow:0 2px 8px rgba(120,100,60,.1); }
+  .card h2{ font-family:var(--kai); font-size:19px; letter-spacing:2px; margin-bottom:10px; }
+  .card p, .card li{ font-size:14.5px; line-height:1.9; color:#3d372e; }
+  .card ul{ padding-left:20px; }
+  .shot{ width:100%; border:1px solid var(--line); border-radius:10px; margin:10px 0 4px; box-shadow:0 2px 10px rgba(120,100,60,.12); }
+  .cap{ font-family:var(--kai); font-size:12.5px; color:var(--sub); text-align:center; letter-spacing:1px; margin-bottom:8px; }
+  .btns{ display:flex; gap:14px; justify-content:center; margin-top:34px; flex-wrap:wrap; }
+  .btn{ font-family:var(--kai); font-size:15.5px; letter-spacing:2px; color:#f7efdd; text-decoration:none;
+        background:linear-gradient(145deg,#9d3b28,#7c2d1e); border-radius:10px; padding:11px 26px;
+        box-shadow:1px 3px 6px rgba(124,45,30,.3); }
+  .btn.ghost{ background:none; color:var(--seal); border:1.5px solid rgba(157,59,40,.55); }
+  footer{ text-align:center; font-family:var(--kai); color:var(--faint,#948871); font-size:12.5px;
+          padding:24px; letter-spacing:1.5px; border-top:1px solid var(--line); }
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="seal">诗</div>
+  <h1>历代诗人知识图谱问答系统</h1>
+  <div class="sub">本科毕业设计 · 基于知识图谱与检索增强生成 · 图谱求全 · 对话求精 · 答案皆以诗为证</div>
+  <div class="stats">
+    <div class="stat"><b>57,607</b><span>全唐诗入库</span></div>
+    <div class="stat"><b>3,662</b><span>诗人节点</span></div>
+    <div class="stat"><b>138</b><span>人工复核交游边</span></div>
+    <div class="stat"><b>+34pp</b><span>图谱约束增益</span></div>
+  </div>
+</div>
+<main>
+  <div class="card">
+    <h2>这是什么</h2>
+    <p>一个把《全唐诗》读"厚"的问答系统： Neo4j 图谱 + FAISS 向量双轨检索、BERT NER 消歧、DeepSeek 证据化生成，
+       全部组件可在普通笔记本 CPU 上运行，任一组件缺席自动降级、永不离线。事实型回答一律携带可溯源的诗篇证据，
+       LLM 只组织语言、不生成查询语句——"图谱管事实、模型管表达"。</p>
+  </div>
+  <div class="card">
+    <h2>智能问答 · 图谱查询 + 语义检索</h2>
+    <img class="shot" src="shot5-1_qa.png" alt="智能问答界面">
+    <div class="cap">问"杜甫和李白是什么关系"——互赠酬答的诗友关系，证据诗篇可展开回溯原文</div>
+  </div>
+  <div class="card">
+    <h2>图谱探索 · 交游网络可视化</h2>
+    <img class="shot" src="shot5-2_graph.png" alt="图谱探索界面">
+    <div class="cap">李白的一跳交游子图：杜甫、孟浩然、王昌龄、贺知章……边上的标签就是关系类型</div>
+  </div>
+  <div class="card">
+    <h2>诗人对话 · 人格由图谱构建</h2>
+    <img class="shot" src="shot5-3_dialog.png" alt="诗人对话界面">
+    <div class="cap">30 位诗人可对话；问其身后事会被"生卒年时间锚"优雅拦下，不会穿越</div>
+  </div>
+  <div class="card">
+    <h2>实验结果</h2>
+    <ul>
+      <li>一致性主实验（n=100，五类问题）：裸 LLM 66% vs 图谱约束 <b>100%</b>（+34pp）</li>
+      <li>检索消融（15 条名句锚点，hit@3）：向量+双路增强 <b>80.0%</b> vs 关键词扫描 13.3%</li>
+      <li>交游边：443 条诗篇级证据 → 三层消歧 → 43 对隔离边逐条人工复核 → 138 对全部定案</li>
+    </ul>
+  </div>
+  <div class="btns">
+    <a class="btn" href="https://github.com/liuzhiqiang23/poet-kgqa">GitHub 仓库</a>
+    <a class="btn ghost" href="https://gitee.com/liu-zhiqiang20030520/poet-kgqa">Gitee 仓库</a>
+  </div>
+</main>
+<footer>毕业设计 · 数据源 chinese-poetry (MIT) · 横幅与头像均为公有领域素材 · 代码 MIT License</footer>
+</body>
+</html>
