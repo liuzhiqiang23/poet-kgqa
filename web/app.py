@@ -183,5 +183,7 @@ def api_dialog():
 
 
 if __name__ == "__main__":
+    import os
     print(f"graph backend: {type(graph).__name__} | retriever: {retriever.mode}")
-    app.run(host="127.0.0.1", port=5000, debug=False)
+    app.run(host=os.environ.get("POET_HOST", "127.0.0.1"),
+            port=int(os.environ.get("POET_PORT", "5000")), debug=False)
