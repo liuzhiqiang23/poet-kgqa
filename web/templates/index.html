@@ -222,7 +222,7 @@
 <!-- ============ 智能问答 ============ -->
 <section class="panel on" id="p-qa">
   <div class="hero" id="hero">
-    <div class="banner"><img src="/static/img/banner.jpg" alt="千里江山图（局部，公有领域）"></div>
+    <div class="banner"><img src="static/img/banner.jpg" alt="千里江山图（局部，公有领域）"></div>
     <div class="hero-in">
       <h2>千年诗心，<em>一问即达</em></h2>
       <p>以知识图谱为经，以诗篇原文为纬 —— 每一个答案，都有诗为证</p>
@@ -247,7 +247,7 @@
 <!-- ============ 图谱探索 ============ -->
 <section class="panel" id="p-graph">
   <div class="hero slim">
-    <div class="banner"><img src="/static/img/banner-graph.jpg" alt="富春山居图（局部，公有领域）"></div>
+    <div class="banner"><img src="static/img/banner-graph.jpg" alt="富春山居图（局部，公有领域）"></div>
     <div class="hero-in">
       <h2>千年交游，<em>一图可探</em></h2>
       <p>山势起伏如脉络，画卷铺展即图谱 —— 唱和、并称与传承，尽收眼底</p>
@@ -275,7 +275,7 @@
 <!-- ============ 诗人对话 ============ -->
 <section class="panel" id="p-dialog">
   <div class="hero slim">
-    <div class="banner"><img src="/static/img/banner-dialog.jpg" alt="文会图（局部，公有领域）"></div>
+    <div class="banner"><img src="static/img/banner-dialog.jpg" alt="文会图（局部，公有领域）"></div>
     <div class="hero-in">
       <h2>隔卷对坐，<em>与诗家言</em></h2>
       <p>三十位诗人坐镇案头，言必有据 —— 身后之事，一概不知</p>
@@ -285,7 +285,7 @@
     <div class="pstrip">
       {% for p in poets %}
       <button class="pslot{% if p == '李白' %} on{% endif %}" data-p="{{ p }}" onclick="dpick('{{ p }}')">
-        <div class="ava"><span>{{ p[0] }}</span><img src="/static/avatars/{{ p|urlencode }}.jpg" onerror="this.remove()" alt="{{ p }}"></div>
+        <div class="ava"><span>{{ p[0] }}</span><img src="static/avatars/{{ p|urlencode }}.jpg" onerror="this.remove()" alt="{{ p }}"></div>
         <div class="nm">{{ p }}</div>
       </button>
       {% endfor %}
@@ -317,7 +317,7 @@ document.querySelectorAll('nav .tabs button').forEach(b => b.onclick = () => {
 });
 
 /* 今日诗句（按日期轮换，同一天不变） */
-fetch('/api/daily').then(r => r.json()).then(d => {
+fetch('api/daily').then(r => r.json()).then(d => {
   document.getElementById('d-line').textContent = '「' + d.line + '」';
   document.getElementById('d-src').textContent = d.poet + ' · ' + d.poem;
 }).catch(() => { document.getElementById('d-line').textContent = ''; });
@@ -325,7 +325,7 @@ fetch('/api/daily').then(r => r.json()).then(d => {
 /* ---------- 头像（图片缺失时自动降级为印章字） ---------- */
 function avaHTML(name, me){
   return `<div class="ava${me ? ' meava' : ''}"><span>${name[0]}</span>` +
-         `<img src="/static/avatars/${encodeURIComponent(name)}.jpg" onerror="this.remove()" alt=""></div>`;
+         `<img src="static/avatars/${encodeURIComponent(name)}.jpg" onerror="this.remove()" alt=""></div>`;
 }
 
 /* ---------- 智能问答（追加式问答流） ---------- */
@@ -341,7 +341,7 @@ async function ask(){
     `<div class="qa-a" id="pending"><span class="stamp">求解中</span><br><span class="dots"><i></i><i></i><i></i></span></div>`);
   flow.scrollTop = 1e9; window.scrollTo({top:document.body.scrollHeight, behavior:'smooth'});
   try{
-    const r = await fetch('/api/qa', {method:'POST', headers:{'Content-Type':'application/json'},
+    const r = await fetch('api/qa', {method:'POST', headers:{'Content-Type':'application/json'},
                                       body: JSON.stringify({q})});
     const d = await r.json();
     const card = document.getElementById('pending'); card.removeAttribute('id');
@@ -386,14 +386,14 @@ function render(nodes, edges){
 }
 async function drawEgo(){
   const n = document.getElementById('g-name').value.trim(); if(!n) return;
-  const d = await (await fetch(`/api/ego?name=${encodeURIComponent(n)}&depth=${document.getElementById('g-depth').value}`)).json();
+  const d = await (await fetch(`api/ego?name=${encodeURIComponent(n)}&depth=${document.getElementById('g-depth').value}`)).json();
   if(!d.nodes.length){ alert('图谱中未找到该诗人的交游记录'); return; }
   render(d.nodes, d.edges);
 }
 async function drawPath(){
   const a = document.getElementById('p-a').value.trim(), b = document.getElementById('p-b').value.trim();
   if(!a || !b) return;
-  const d = await (await fetch(`/api/path?a=${encodeURIComponent(a)}&b=${encodeURIComponent(b)}`)).json();
+  const d = await (await fetch(`api/path?a=${encodeURIComponent(a)}&b=${encodeURIComponent(b)}`)).json();
   if(!d.path){ alert('两人暂不连通'); return; }
   const nodes = d.path.map(x => ({id:x, label:x, group: x===d.path[0]?'head':'poet'}));
   const edges = d.path.slice(0,-1).map((x,i) => ({from:x, to:d.path[i+1], label:''}));
@@ -426,7 +426,7 @@ async function dask(){
     `<div class="msg" id="${pendId}">${avaHTML(poet)}<div class="bubble"><span class="dots"><i></i><i></i><i></i></span></div></div>`);
   scroll();
   try{
-    const r = await fetch('/api/dialog', {method:'POST', headers:{'Content-Type':'application/json'},
+    const r = await fetch('api/dialog', {method:'POST', headers:{'Content-Type':'application/json'},
       body: JSON.stringify({poet, q, history: (window.dhist = window.dhist || [])})});
     const d = await r.json();
     document.getElementById(pendId).innerHTML =
