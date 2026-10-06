@@ -8,8 +8,10 @@ from __future__ import annotations
 
 import sys
 import time
+import logging
 from collections import defaultdict, deque
 from pathlib import Path
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
@@ -25,6 +27,7 @@ from kg.graph_service import get_graph  # noqa: E402
 from rag.retriever import Retriever  # noqa: E402
 
 app = Flask(__name__)
+logging.basicConfig(level=logging.INFO)
 graph = get_graph()
 linker = EntityLinker()
 retriever = Retriever()
@@ -75,8 +78,8 @@ RATE_LIMIT = 12  # 每 IP 每分钟 POST 上限（DeepSeek 调用只发生在 PO
 @app.before_request
 def _guard_api():
     if request.method == "POST" and request.path.startswith("/api/"):
-        # 反代场景取 X-Real-IP（nginx 注入）；直连场景 remote_addr 即本机
-        real_ip = request.headers.get("X-Real-IP") or request.remote_addr or "?"
+        # 仅使用 TCP 对端地址；客户端可自行伪造 X-Real-IP。
+        real_ip = request.remote_addr or "?"
         now = time.time()
         dq = _rate[real_ip]
         while dq and now - dq[0] > 60:
@@ -85,10 +88,14 @@ def _guard_api():
             return jsonify({"error": "请求太频繁，请稍后再试"}), 429
         dq.append(now)
         # 同源锁定：浏览器同源 fetch 必带 Origin/Referer；绕过页面直调接口的脚本两者皆无 → 拒
-        host = request.headers.get("Host", "")
         org = request.headers.get("Origin") or request.headers.get("Referer") or ""
-        same_origin = bool(org) and org.split("//", 1)[-1].startswith(host)
-        if real_ip not in ("127.0.0.1", "::1") and not same_origin:
+        try:
+            source = urlsplit(org)
+            same_origin = (source.scheme in ("http", "https")
+                           and source.netloc.lower() == request.host.lower())
+        except ValueError:
+            same_origin = False
+        if not same_origin:
             return jsonify({"error": "forbidden"}), 403
     return None
 
@@ -176,15 +183,21 @@ def api_qa():
         return jsonify({"route": "graph", "query_type": g["type"],
                         "summary": to_hans(g["summary"]), "answer": to_hans(answer),
                         "evidence": _hans_evidence(g["evidence"]), "facts": g["facts"]})
-    except Exception as e:
-        return jsonify({"error": f"{type(e).__name__}: {e}",
+    except Exception:
+        app.logger.exception("Question answering request failed")
+        return jsonify({"error": "internal server error",
                         "summary": to_hans((g or {}).get("summary", "")) if mode != "semantic" else ""}), 500
 
 
 @app.get("/api/ego")
 def api_ego():
     name = request.args.get("name", "").strip()
-    depth = int(request.args.get("depth", 1))
+    try:
+        depth = int(request.args.get("depth", 1))
+    except (TypeError, ValueError):
+        return jsonify({"error": "depth must be 1 or 2"}), 400
+    if depth not in (1, 2):
+        return jsonify({"error": "depth must be 1 or 2"}), 400
     return jsonify(graph.ego(name, depth))
 
 
@@ -205,8 +218,9 @@ def api_dialog():
     sys_prompt = build_system_prompt(poet, graph, linker)
     try:
         ans = persona_answer(poet, sys_prompt, history, q)
-    except Exception as e:
-        ans = f"[生成失败 {type(e).__name__}]"
+    except Exception:
+        app.logger.exception("Poet dialogue generation failed")
+        return jsonify({"error": "internal server error"}), 500
     return jsonify({"poet": poet, "answer": ans})
 
 
