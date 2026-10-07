@@ -450,7 +450,8 @@ async function dask(){
     const d = await r.json();
     document.getElementById(pendId).innerHTML =
       avaHTML(poet) + `<div class="bubble"><div class="who">${esc(poet)}</div>${esc(d.answer || d.error || '……')}</div>`;
-    window.dhist = (window.dhist || []).concat([{role:'user', content:q}, {role:'assistant', content:d.answer || ''}]);
+    window.dhist = (window.dhist || []).concat(d.answer
+      ? [{role:'user', content:q}, {role:'assistant', content:d.answer}] : []);
     if(window.dhist.length > 8) window.dhist = window.dhist.slice(-8);
   }catch(e){
     document.getElementById(pendId).innerHTML =

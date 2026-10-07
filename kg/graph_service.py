@@ -211,16 +211,18 @@ class JsonlGraph:
 
 
 class Neo4jGraph:
-    """真实 Neo4j 后端：环境变量 NEO4J_URI/NEO4J_USER/NEO4J_PASSWORD 存在时启用。
-    Cypher 全部参数化模板。"""
+    """真实 Neo4j 后端：环境变量 NEO4J_URI/NEO4J_USER/NEO4J_PASSWORD 控制连接，
+    NEO4J_PASSWORD 必须显式提供（无默认密码）。Cypher 全部参数化模板。"""
 
     def __init__(self) -> None:
         from neo4j import GraphDatabase  # noqa: 延迟导入
         import os
+        pw = os.environ.get("NEO4J_PASSWORD")
+        if not pw:
+            raise RuntimeError("启用 Neo4j 需显式设置 NEO4J_PASSWORD（不提供默认密码）")
         uri = os.environ.get("NEO4J_URI", "bolt://localhost:7687")
         self.driver = GraphDatabase.driver(
-            uri, auth=(os.environ.get("NEO4J_USER", "neo4j"),
-                       os.environ.get("NEO4J_PASSWORD", "poet-kgqa")))
+            uri, auth=(os.environ.get("NEO4J_USER", "neo4j"), pw))
         self.driver.verify_connectivity()
 
     def _run(self, query: str, **params) -> list[dict]:

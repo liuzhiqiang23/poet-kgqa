@@ -45,7 +45,8 @@
 
 ```bash
 # 0) 环境：Python 3.10+；语义检索需带 torch 的解释器（bge 模型）
-pip install flask zhconv faiss-cpu sentence_transformers   # 无 faiss 用 numpy 亦可
+pip install flask zhconv faiss-cpu sentence_transformers  # 无 faiss 用 numpy 亦可
+pip install neo4j                                          # 仅启用 Neo4j 图后端时需要（POET_KGQA_USE_NEO4J=1 + NEO4J_PASSWORD 必填）
 
 # 1) 建库管线（按序执行，可重复）
 python scripts/00_download_corpus.py      # 全唐语料 ~24MB（jsDelivr 通道）

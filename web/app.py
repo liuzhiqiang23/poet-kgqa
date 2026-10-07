@@ -11,6 +11,7 @@ import time
 import logging
 from collections import defaultdict, deque
 from pathlib import Path
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
@@ -69,17 +70,50 @@ def _hans_evidence(ev):
     return out
 
 
-# ---------- 公网防滥用：同源锁定（全接口）+ 进程内限流（POST） ----------
+# ---------- 公网防滥用：同源锁定（全接口）+ 限流/费用上限 + 输入校验 ----------
 _rate: dict = defaultdict(deque)
-RATE_LIMIT = 12  # 每 IP 每分钟 POST 上限（DeepSeek 调用只发生在 POST）
+RATE_LIMIT = 12          # 每 IP 每分钟 POST 上限（DeepSeek 调用只发生在 POST）
+DAILY_LLM_LIMIT = 1500   # 全站每日 LLM 调用上限（单进程计数，日切自动重置；单次费用由 max_tokens 封顶）
+_llm_today = {"day": "", "n": 0}
+MAX_Q = 200              # 问题长度上限（字符）
+MAX_MSG = 400            # 对话历史单条长度上限（字符）
+MAX_HISTORY = 8          # 对话历史条数上限
+
+app.config["MAX_CONTENT_LENGTH"] = 16 * 1024  # 请求体上限 16KB → 超限 413
 
 
-def _same_origin(host: str, org: str) -> bool:
-    """Origin/Referer 的主机部分须与 Host 精确相等；前缀匹配会被 xx.evil.com 式域名绕过。"""
+def _llm_budget_ok() -> bool:
+    today = time.strftime("%Y-%m-%d")
+    if _llm_today["day"] != today:
+        _llm_today.update(day=today, n=0)
+    return _llm_today["n"] < DAILY_LLM_LIMIT
+
+
+def _llm_charge() -> None:
+    _llm_today["n"] += 1
+
+
+def _rate_sweep(now: float) -> None:
+    """过期 IP 键清理：条目过多时丢弃整窗已过期的键，防止长尾增长（单进程演示够用，
+    多 worker 正式部署应换 Redis 共享存储）。"""
+    if len(_rate) < 4096:
+        return
+    for k in [k for k, dq in _rate.items() if not dq or now - dq[-1] > 60]:
+        del _rate[k]
+
+
+def _same_origin(host: str, org: str, proto: str) -> bool:
+    """解析 Origin/Referer 后核对 协议+主机:端口 与请求一致；主机前缀匹配会被
+    xx.evil.com 式域名绕过。注意：同源锁定只是浏览器请求保护，不替代认证与费用控制。"""
     if not org or not host:
         return False
-    org_host = org.split("//", 1)[-1].split("/", 1)[0]
-    return org_host.lower() == host.lower()
+    try:
+        u = urlsplit(org)
+    except ValueError:
+        return False
+    if u.scheme not in ("http", "https") or u.netloc.lower() != host.lower():
+        return False
+    return not proto or u.scheme == proto  # 未提供 X-Forwarded-Proto（直连/未配反代头）时仅核对主机:端口
 
 
 @app.before_request
@@ -88,20 +122,46 @@ def _guard_api():
         # 反代场景取 X-Real-IP：nginx `proxy_set_header X-Real-IP $remote_addr` 会覆盖客户端
         # 伪造值，且本服务只绑 127.0.0.1、外部无法直连，故该头可信；直连场景 remote_addr 即本机
         real_ip = request.headers.get("X-Real-IP") or request.remote_addr or "?"
+        now = time.time()
         if request.method == "POST":
-            now = time.time()
             dq = _rate[real_ip]
             while dq and now - dq[0] > 60:
                 dq.popleft()
             if len(dq) >= RATE_LIMIT:
                 return jsonify({"error": "请求太频繁，请稍后再试"}), 429
             dq.append(now)
+        _rate_sweep(now)
         # 同源锁定：浏览器同源 fetch 必带 Origin/Referer；绕过页面直调接口的脚本两者皆无 → 拒
         host = request.headers.get("Host", "")
         org = request.headers.get("Origin") or request.headers.get("Referer") or ""
-        if real_ip not in ("127.0.0.1", "::1") and not _same_origin(host, org):
+        proto = request.headers.get("X-Forwarded-Proto", "").split(",")[0].strip().lower()
+        if real_ip not in ("127.0.0.1", "::1") and not _same_origin(host, org, proto):
             return jsonify({"error": "forbidden"}), 403
     return None
+
+
+def _body_dict():
+    """请求体须为 JSON 对象：数组/标量/畸形 JSON/缺 Content-Type 一律 400，不再 500。"""
+    d = request.get_json(silent=True)
+    return d if isinstance(d, dict) else None
+
+
+def _clean_history(h):
+    """对话历史白名单：仅接受 user/assistant 两种角色，拒收伪造 system 注入与格式异常记录；
+    条数与单条长度截断。返回 None 表示格式非法。"""
+    if h is None:
+        return []
+    if not isinstance(h, list):
+        return None
+    out = []
+    for m in h[-MAX_HISTORY:]:
+        if not isinstance(m, dict):
+            return None
+        role, content = m.get("role"), m.get("content")
+        if role not in ("user", "assistant") or not isinstance(content, str) or not content.strip():
+            return None
+        out.append({"role": role, "content": content[:MAX_MSG]})
+    return out
 
 
 @app.route("/")
@@ -158,15 +218,23 @@ def api_daily():
 
 @app.post("/api/qa")
 def api_qa():
-    q = (request.json or {}).get("q", "").strip()
+    d = _body_dict()
+    if not d or not isinstance(d.get("q"), str):
+        return jsonify({"error": "请求体须为 JSON 对象且含字符串字段 q"}), 400
+    q = d["q"].strip()
     if not q:
-        return jsonify({"error": "empty question"}), 400
+        return jsonify({"error": "问题不能为空"}), 400
+    if len(q) > MAX_Q:
+        return jsonify({"error": f"问题过长（限 {MAX_Q} 字）"}), 400
+    if not _llm_budget_ok():
+        return jsonify({"error": "今日体验额度已用完，欢迎明天再来"}), 429
     mode = route(q)
     g = None  # answer_graph 自身抛异常时 except 里也要能安全取 summary
     try:
         if mode == "semantic":
             hits = retriever.search(q, 5)
             ctx = "\n\n".join(f"《{h['title']}》（{h['author']}）：{h['preview']}" for h in hits)
+            _llm_charge()
             answer = organize_answer(q, {"检索结果(含原文节选)": ctx}, temperature=0.4)
             return jsonify({"route": "semantic", "retriever_mode": retriever.mode,
                             "answer": to_hans(answer), "evidence": _hans_evidence([
@@ -183,6 +251,7 @@ def api_qa():
                                           f"如需图谱查询请点名诗人，例如「杜甫和李白是什么关系」。",
                                 "evidence": _hans_evidence([{"title": h["title"], "author": h["author"],
                                               "preview": h["preview"]} for h in hits])})
+        _llm_charge()
         answer = organize_answer(q, g["facts"], temperature=0.2)
         return jsonify({"route": "graph", "query_type": g["type"],
                         "summary": to_hans(g["summary"]), "answer": to_hans(answer),
@@ -196,6 +265,8 @@ def api_qa():
 @app.get("/api/ego")
 def api_ego():
     name = request.args.get("name", "").strip()
+    if not name or len(name) > 24:
+        return jsonify({"error": "name 参数不合法"}), 400
     try:
         depth = int(request.args.get("depth", 1))
     except ValueError:
@@ -212,13 +283,25 @@ def api_path():
 
 @app.post("/api/dialog")
 def api_dialog():
-    d = request.json or {}
-    poet, q = d.get("poet", "").strip(), d.get("q", "").strip()
-    history = d.get("history", [])[-8:]
-    if not poet or not q:
-        return jsonify({"error": "poet and q required"}), 400
+    d = _body_dict()
+    if not d:
+        return jsonify({"error": "请求体须为 JSON 对象"}), 400
+    poet, q = d.get("poet"), d.get("q")
+    if not isinstance(poet, str) or not isinstance(q, str) or not poet.strip() or not q.strip():
+        return jsonify({"error": "poet 和 q 必须为非空字符串"}), 400
+    poet, q = poet.strip(), q.strip()
+    if len(q) > MAX_Q:
+        return jsonify({"error": f"问题过长（限 {MAX_Q} 字）"}), 400
+    if poet not in linker.dates:  # 仅 30 位建档诗人可对话
+        return jsonify({"error": "未知诗人"}), 400
+    history = _clean_history(d.get("history"))
+    if history is None:
+        return jsonify({"error": "history 格式不正确（仅接受 user/assistant 消息）"}), 400
+    if not _llm_budget_ok():
+        return jsonify({"error": "今日体验额度已用完，欢迎明天再来"}), 429
     sys_prompt = build_system_prompt(poet, graph, linker)
     try:
+        _llm_charge()
         ans = persona_answer(poet, sys_prompt, history, q)
     except Exception:
         app.logger.exception("诗人对话生成失败")
