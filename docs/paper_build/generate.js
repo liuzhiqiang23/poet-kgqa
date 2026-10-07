@@ -12,7 +12,7 @@ const path = require("path");
 
 const C = JSON.parse(fs.readFileSync(path.join(__dirname, "content.json"), "utf-8"));
 const META = C.meta;
-const OUT = path.join(__dirname, "毕设论文-基于知识图谱与检索增强生成的中国历代诗人智能问答系统.docx");
+const OUT = path.join(__dirname, "毕设论文-融合知识图谱与大语言模型的诗人知识问答与对话系统设计.docx");
 
 const NB = { style: BorderStyle.NONE, size: 0, color: "auto" };
 const FONT_BODY = { ascii: "Times New Roman", eastAsia: "SimSun" };

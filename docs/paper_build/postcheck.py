@@ -16,7 +16,7 @@ HERE = Path(__file__).parent
 
 def main() -> None:
     path = Path(sys.argv[1]) if len(sys.argv) > 1 else \
-        HERE / "毕设论文-基于知识图谱与检索增强生成的中国历代诗人智能问答系统.docx"
+        HERE / "毕设论文-融合知识图谱与大语言模型的诗人知识问答与对话系统设计.docx"
     errors, warnings = [], []
 
     z = zipfile.ZipFile(path)

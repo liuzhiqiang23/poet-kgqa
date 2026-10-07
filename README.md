@@ -1,6 +1,6 @@
-# 历代诗人知识图谱问答系统（poet-kgqa）
+# 诗人知识问答与对话系统（poet-kgqa）
 
-> 本科毕业设计 · 基于知识图谱与检索增强生成的中国历代诗人智能问答系统
+> 本科毕业设计 · 融合知识图谱与大语言模型的诗人知识问答与对话系统设计
 > 数据底座：[chinese-poetry](https://github.com/chinese-poetry/chinese-poetry)（MIT）全唐诗 58 卷 **57,607 首**、诗人 **3,662 位**
 
 **Neo4j 图谱 + FAISS 向量双轨检索 + BERT NER 消歧 + DeepSeek 证据化生成**，全部组件可在普通笔记本 CPU 上运行，任一组件缺席自动降级、永不离线。

@@ -74,7 +74,7 @@ def main() -> None:
     args = sys.argv[1:]
     if "--auto" in args:
         args.remove("--auto")
-    path = Path(args[0]) if args else HERE / "毕设论文-基于知识图谱与检索增强生成的中国历代诗人智能问答系统.docx"
+    path = Path(args[0]) if args else HERE / "毕设论文-融合知识图谱与大语言模型的诗人知识问答与对话系统设计.docx"
 
     zin = zipfile.ZipFile(path)
     items = {n: zin.read(n) for n in zin.namelist()}
