@@ -122,6 +122,7 @@ class JsonlGraph:
 
     def ego(self, name: str, depth: int = 1) -> dict:
         """pyvis 子图：{nodes:[{id,label,group}], edges:[{from,to,label}]}"""
+        depth = max(1, min(int(depth), 3))  # 钳制深度，防变长遍历放大
         if name not in self.poets and name not in self.assoc:
             return {"nodes": [], "edges": []}
         nodes, edges, visited = {}, [], {name}
@@ -241,6 +242,7 @@ class Neo4jGraph:
         return r
 
     def ego(self, name: str, depth: int = 1) -> dict:
+        depth = max(1, min(int(depth), 3))  # 变长路径上限，防深度注入放大遍历
         rows = self._run(
             f"MATCH (p:Poet {{name:$n}})-[a:ASSOC*1..{depth}]-(q:Poet) "
             "WITH p, q, a LIMIT 200 UNWIND a AS rel "
@@ -296,12 +298,10 @@ class Neo4jGraph:
         return [r["n"] for r in rows]
 
     def top_imagery(self, keyword: str, top: int = 10) -> list[dict]:
-        rows = self._run(
-            "MATCH (p:Poet)-[:WROTE]->(w:Work) WHERE w.title CONTAINS $kw "
-            "RETURN p.name AS poet, count(w) AS n ORDER BY n DESC LIMIT $top",
-            kw=keyword, top=top)
-        # 注：正文不在图中，Neo4j 后端按题名统计；正文级统计走 JsonlGraph 的 poems 扫描
-        return rows
+        # 正文不在图中；为与 JsonlGraph 口径一致（正文+标题扫描），统一委托底表扫描并缓存
+        if not hasattr(self, "_jsonl_stats"):
+            self._jsonl_stats = JsonlGraph()
+        return self._jsonl_stats.top_imagery(keyword, top)
 
     def all_groups(self) -> list[str]:
         return [r["g"] for r in self._run("MATCH (g:Group) RETURN g.gname AS g ORDER BY g.gname")]
@@ -316,14 +316,17 @@ def get_graph():
     """优先 Neo4j，失败/未配置则 JSONL 兜底（系统永不离线）。"""
     import os
     if os.environ.get("POET_KGQA_USE_NEO4J") == "1":
-        return Neo4jGraph()
+        try:
+            return Neo4jGraph()
+        except Exception as e:  # 库未启动/密码错误/驱动缺失：兜底而非崩溃
+            print(f"[graph_service] Neo4j 不可用（{type(e).__name__}: {e}），退回 JsonlGraph 后端")
     return JsonlGraph()
 
 
 if __name__ == "__main__":
     g = get_graph()
     print("backend:", type(g).__name__, "| poets:", len(getattr(g, "poets", [])) or "-")
-    print("李白 邻居:", [x["poet"] for x in g.ego("李白")["nodes"]][:12] if hasattr(g, "ego") else "")
+    print("李白 邻居:", [x["id"] for x in g.ego("李白")["nodes"]][:12] if hasattr(g, "ego") else "")
     rel = g.relation("杜甫", "李白")
     print("杜甫-李白:", json.dumps(rel, ensure_ascii=False)[:300])
     print("李白→韩愈 路径:", g.shortest_path("李白", "韩愈"))

@@ -22,3 +22,7 @@ docs/paper_build/part2.md
 docs/paper_build/part3.md
 docs/paper_build/content.json
 docs/paper_build/*.docx
+
+# 运行日志不入库
+server.log
+*.log

@@ -11,7 +11,6 @@ import time
 import logging
 from collections import defaultdict, deque
 from pathlib import Path
-from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
@@ -70,32 +69,37 @@ def _hans_evidence(ev):
     return out
 
 
-# ---------- 公网防滥用：同源锁定 + 进程内限流 ----------
+# ---------- 公网防滥用：同源锁定（全接口）+ 进程内限流（POST） ----------
 _rate: dict = defaultdict(deque)
 RATE_LIMIT = 12  # 每 IP 每分钟 POST 上限（DeepSeek 调用只发生在 POST）
 
 
+def _same_origin(host: str, org: str) -> bool:
+    """Origin/Referer 的主机部分须与 Host 精确相等；前缀匹配会被 xx.evil.com 式域名绕过。"""
+    if not org or not host:
+        return False
+    org_host = org.split("//", 1)[-1].split("/", 1)[0]
+    return org_host.lower() == host.lower()
+
+
 @app.before_request
 def _guard_api():
-    if request.method == "POST" and request.path.startswith("/api/"):
-        # 仅使用 TCP 对端地址；客户端可自行伪造 X-Real-IP。
-        real_ip = request.remote_addr or "?"
-        now = time.time()
-        dq = _rate[real_ip]
-        while dq and now - dq[0] > 60:
-            dq.popleft()
-        if len(dq) >= RATE_LIMIT:
-            return jsonify({"error": "请求太频繁，请稍后再试"}), 429
-        dq.append(now)
+    if request.path.startswith("/api/"):
+        # 反代场景取 X-Real-IP：nginx `proxy_set_header X-Real-IP $remote_addr` 会覆盖客户端
+        # 伪造值，且本服务只绑 127.0.0.1、外部无法直连，故该头可信；直连场景 remote_addr 即本机
+        real_ip = request.headers.get("X-Real-IP") or request.remote_addr or "?"
+        if request.method == "POST":
+            now = time.time()
+            dq = _rate[real_ip]
+            while dq and now - dq[0] > 60:
+                dq.popleft()
+            if len(dq) >= RATE_LIMIT:
+                return jsonify({"error": "请求太频繁，请稍后再试"}), 429
+            dq.append(now)
         # 同源锁定：浏览器同源 fetch 必带 Origin/Referer；绕过页面直调接口的脚本两者皆无 → 拒
+        host = request.headers.get("Host", "")
         org = request.headers.get("Origin") or request.headers.get("Referer") or ""
-        try:
-            source = urlsplit(org)
-            same_origin = (source.scheme in ("http", "https")
-                           and source.netloc.lower() == request.host.lower())
-        except ValueError:
-            same_origin = False
-        if not same_origin:
+        if real_ip not in ("127.0.0.1", "::1") and not _same_origin(host, org):
             return jsonify({"error": "forbidden"}), 403
     return None
 
@@ -184,7 +188,7 @@ def api_qa():
                         "summary": to_hans(g["summary"]), "answer": to_hans(answer),
                         "evidence": _hans_evidence(g["evidence"]), "facts": g["facts"]})
     except Exception:
-        app.logger.exception("Question answering request failed")
+        app.logger.exception("问答请求失败")
         return jsonify({"error": "internal server error",
                         "summary": to_hans((g or {}).get("summary", "")) if mode != "semantic" else ""}), 500
 
@@ -194,11 +198,9 @@ def api_ego():
     name = request.args.get("name", "").strip()
     try:
         depth = int(request.args.get("depth", 1))
-    except (TypeError, ValueError):
-        return jsonify({"error": "depth must be 1 or 2"}), 400
-    if depth not in (1, 2):
-        return jsonify({"error": "depth must be 1 or 2"}), 400
-    return jsonify(graph.ego(name, depth))
+    except ValueError:
+        depth = 1
+    return jsonify(graph.ego(name, depth))  # 图层内钳制 depth ≤ 3
 
 
 @app.get("/api/path")
@@ -219,8 +221,8 @@ def api_dialog():
     try:
         ans = persona_answer(poet, sys_prompt, history, q)
     except Exception:
-        app.logger.exception("Poet dialogue generation failed")
-        return jsonify({"error": "internal server error"}), 500
+        app.logger.exception("诗人对话生成失败")
+        ans = "[生成失败，请稍后重试]"  # 保持 200 返回用户可见提示，前端不落空
     return jsonify({"poet": poet, "answer": ans})
 
 
