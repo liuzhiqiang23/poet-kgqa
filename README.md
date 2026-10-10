@@ -1,5 +1,7 @@
 # 诗人知识问答与对话系统（poet-kgqa）
 
+**[English](./README_EN.md) | 中文**
+
 > 本科毕业设计 · 融合知识图谱与大语言模型的诗人知识问答与对话系统设计
 > 数据底座：[chinese-poetry](https://github.com/chinese-poetry/chinese-poetry)（MIT）全唐诗 58 卷 **57,607 首**、诗人 **3,662 位**
 
